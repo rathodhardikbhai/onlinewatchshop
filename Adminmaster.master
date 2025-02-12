@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Adminmaster.master.cs" Inherits="ADMIN_Adminmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="admin.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        <table style="border-style:outset">
+            <tr>
+                
+                <td>
+                    <asp:Image ID="Image1" runat="server" Height="190px" Width="1093px" ImageUrl="~/Image1/baner.jpeg" /></td>
+                
+            </tr>
+        </table>
+    </div>
+
+    <div id="main" style="">
+       <div id="mnu">
+            <table class="main">
+                <tr>
+                    <td class="tblhead">
+                        MENU</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="btnAddCategory" runat="server"  
+                           Text="Add Category" CssClass="mbtn"
+                            CausesValidation="False" PostBackUrl="~/ADMIN/Addcategory.aspx" 
+                             />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="btnAddProduct" runat="server" CssClass="mbtn"
+                            Text="Add Product"  CausesValidation="False" 
+                             PostBackUrl="~/ADMIN/Addproduct.aspx" />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <asp:Button ID="btnAddQuantity" runat="server" CssClass="mbtn"
+                            Text="Add Quantity"  CausesValidation="False" 
+                             PostBackUrl="~/ADMIN/Addquantity.aspx" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Button ID="btnUpdateProduct" runat="server" CssClass="mbtn"
+                            Text="Update Product"  CausesValidation="False"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Button ID="btnOrderStatus" runat="server" CssClass="mbtn"
+                            Text="Order Status"  CausesValidation="False" PostBackUrl="~/ADMIN/Orderstatus.aspx"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" CssClass="mbtn"
+                            Text="Orderview"  CausesValidation="False" PostBackUrl="~/ADMIN/Orderview.aspx"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" CssClass="mbtn"
+                            Text="Feedback"  CausesValidation="False" PostBackUrl="~/ADMIN/FEEDBACKADMIN.aspx"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Button ID="btnLogout" runat="server" CssClass="mbtn"
+                            Text="Log Out"  CausesValidation="False" PostBackUrl="~/ADMIN/Login.aspx"/>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div id="cnt">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿body {
+    margin:0;
+    padding:0; 
+    font-family:Verdana;
+}
+.table
+{
+    background-color:silver;
+    border-radius:10px;
+    box-shadow:8px 8px 8px #c2c2c2;
+    margin-top:80px;
+    border-style:outset;
+    
+
+}
+
+.bsubmit input[type=submit] 
+        {
+            color:black;
+            margin-left:4vw;
+            margin-top:2vh;
+            padding-bottom:10px;
+            padding-top:10px;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius:6px;
+            border:1px solid;
+            background-color:#ffffff;
+        }
+        .bsubmit input[type=submit]:hover
+        {
+            color:#ffffff;
+            background-color:black;
+        }
+        .textbox input[type=text] 
+        {
+            width:70%;
+            height: 30px;
+            border: 0;
+            text-align:left;
+            margin-top: 2.5vh;
+            margin-left: 0vw;
+            border-radius: 20px;
+            padding-left:0px;
+            padding-right:30px;
+
+        }
+        .textbox input[type=DropDownList] 
+        {
+            height: 30px;
+            border: 0;
+            margin-top: 2.5vh;
+            margin-left: 4vw;
+            border-radius: 20px;
+        }
+        .textbox input[placeholder] 
+        {
+        font-family:'Trebuchet MS','Lucida Sans Unicode','Lucida Handwriting','Lucida Sans',Arial,sans-serif;
+        padding-left:1vw;
+        font-size:13px;
+        }
+.tlabel 
+{   
+    width:50%;
+    text-align:center;
+    padding-top:10px;
+    padding-left:30px;
+    margin-right:30px;
+}
+
+

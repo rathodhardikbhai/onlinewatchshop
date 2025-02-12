@@ -1,0 +1,68 @@
+﻿body {
+    margin:0;
+    padding:0; 
+    font-family:Verdana;
+}
+.table
+{
+    background-color:silver;
+    border-radius:10px;
+    box-shadow:8px 8px 8px #c2c2c2;
+    margin-top:80px;
+    
+
+}
+
+.bsubmit
+        {
+            color:black;
+            margin-left:0px;
+            margin-top:20px;
+            padding-bottom:10px;
+            padding-top:10px;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius:6px;
+            border:1px solid;
+            background-color:#ffffff;
+        }
+
+.bsubmit:hover
+{
+            color:#ffffff;
+            background-color:black;
+
+}
+.textbox
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    width:70%;
+    height:40px;
+            text-align:left;
+            margin-top: 1vh;
+            margin-left: 0vw;
+            border-radius: 20px;
+            padding-left:0px;
+            padding-right:30px;
+
+        }
+       
+        .textbox 
+        {
+        font-family:'Trebuchet MS','Lucida Sans Unicode','Lucida Handwriting','Lucida Sans',Arial,sans-serif;
+        padding-left:1vw;
+        font-size:13px;
+        }
+.tlabel 
+{   
+    width:50%;
+    text-align:center;
+    padding-top:70px;
+    padding-left:10px;
+    
+}
+
+
+

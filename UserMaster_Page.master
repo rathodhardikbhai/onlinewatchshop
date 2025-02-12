@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster_Page.master.cs" Inherits="UserMaster_Page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="user.css" rel="stylesheet" type="text/css" />
+    <style>
+        .img 
+        {
+            margin-left:15px;
+        }
+        .addshow 
+        {
+            margin-right:15px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:1100px; margin:0 auto;">
+            <tr style="width:1100px; height:50px; border-color:#5f98f3; background-color:white">
+                <td style="width:150px">
+                    <asp:Image ID="Image1" runat="server" Height="100px" Width="150px" ImageUrl="~/image/logo.jpeg" /></td>
+                <td style="text-align:center; width:650px">
+                    <asp:Label ID="Label1" runat="server" Text="Online" Font-Bold="True"  ForeColor="Black" Font-Size="50px"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text="Watch Shop" Font-Bold="True" ForeColor="#FF3300" Font-Size="50px"></asp:Label>
+                    <br />
+                    <asp:Label ID="Label2" runat="server" ForeColor="#FF3300" Font-Bold="True" Text="HARIKRISHNA" Font-Size="20px"></asp:Label>
+                    <asp:Label ID="lblHeader" runat="server" Text="WATCH SHOP" Font-Bold="True" Font-Size="20px"></asp:Label>
+                </td>
+                <td style="width:200px; text-align:right">
+                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/USER/Login_user.aspx">Click To Login</asp:HyperLink>
+                    <asp:Button ID="Button1" runat="server" Text="Log Out" OnClick="Button1_Click" />
+                    <br />
+                    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="social" Height="50px" Width="50px" style="text-align:left; margin-top:50px" ImageUrl="~/image/Whatsapp.jpeg" />&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton2" runat="server" CssClass="social" Height="50px" Width="50px" style="text-align:left" ImageUrl="~/image/Instragram.jpeg" />&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton3" runat="server" CssClass="social" Height="50px" Width="50px" style="text-align:left" PostBackUrl="~/USER/Addtocart.aspx" ImageUrl="~/image/Card.jpeg" />
+                    <br /><br />
+                    <asp:Label ID="Label6" runat="server" Text="Your Lists:-" Font-Bold="True" Font-Size="X-Large"></asp:Label>
+                    <asp:Label ID="Label4" align="center" CssClass="addshow" runat="server" Font-Size="XX-Large" ForeColor="Black"></asp:Label>
+                </td>
+            </tr>
+
+            <tr style="border-color:#666666; text-align:center; border-width:8px; width:1100px; height:50px; color:#666666">
+                <td colspan="3">
+                    <div class="navbar">
+                        <table align="center" cellpadding="8">
+                                 <tr style="border-color:#666666">
+                                        <td>
+                                            <asp:Button ID="btnHome" runat="server" Text="Home" Height="35px" Width="171px" Font-Bold="true" Font-Size="Medium"  CausesValidation="false" BorderColor="#666666" CssClass="mbtn" PostBackUrl="~/USER/Home.aspx"/></td>
+                                        <td>
+                                            <asp:Button ID="btnAllproduct" runat="server" Text="All Product" Height="35px" Width="171px" Font-Bold="true" Font-Size="Medium"  CausesValidation="false" BorderColor="#666666" CssClass="mbtn" PostBackUrl="~/USER/Allproduct.aspx" /></td>
+                                        <td>
+                                            <asp:Button ID="btnSignup" runat="server" Text="Sign Up" Height="35px" Width="171px" Font-Bold="true" Font-Size="Medium"  CausesValidation="false" BorderColor="#666666" CssClass="mbtn" PostBackUrl="~/USER/Sign_up_User.aspx" /></td>
+                                        <td>
+                                            <asp:Button ID="btnLogin" runat="server" Text="Login" Height="35px" Width="171px" Font-Bold="true" Font-Size="Medium"  CausesValidation="false" BorderColor="#666666" CssClass="mbtn" PostBackUrl="~/USER/Login_user.aspx" /></td>
+                                        <td>
+                                            <asp:Button ID="btnAbountus" runat="server" Text="Feedback" Height="35px" Width="171px" Font-Bold="true" Font-Size="Medium"  CausesValidation="false" BorderColor="#666666" CssClass="mbtn" PostBackUrl="~/USER/Feedback.aspx" /></td>
+                                        <td>
+                                            <asp:Button ID="btnContct" runat="server" Text="Contact Us" Height="35px" Width="171px" Font-Bold="true" Font-Size="Medium"  CausesValidation="false" BorderColor="#666666" CssClass="mbtn" /></td>
+                                    </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            
+        
+        <tr><td colspan="3"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder></td></tr>
+
+            <tr style="width:1000px; height:25px; background-color:black;text-align:center;color:white">
+                <td colspan="3">&copy;HARIKRISHNA WATCH SHOP PVT LTD | All Right Reserved.|</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+</body>
+</html>
